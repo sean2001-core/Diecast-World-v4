@@ -1,14 +1,13 @@
 h2{
     font-size: 24px;
-    font-weight: normal;
-    text-align: center;   
+    text-align: center;     
 }
 
-p{
-    font-size: 18px;
+li{
+    font-size: 28px;
 }
 
- footer{
+footer{
     text-align: center;
 }
 
