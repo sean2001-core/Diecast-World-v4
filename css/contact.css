@@ -38,6 +38,7 @@ form{
     background-color: antiquewhite;
     padding: 16px;
     border-radius: 8px;
+    border: 1px solid #ddd;
     box-sizing: border-box;
 }
 
@@ -54,22 +55,32 @@ label{
     color: #333;
 }
 
-input[tpye="text"]
+input[type="text"]
 input[type="email"]
 textarea{
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    font-size: 20px;
-    box-sizing: border-box;
-    min-height: 100px;
-    resize: vertical;
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #f44336;
+  outline: none;
+  box-shadow: 0 0 5px rgba(244, 67, 54, 0.3);
+}
+
+
+
 textarea{
-    min-height: 200px;
-    min-width: 600px;
+    min-height: 100px;
     resize: vertical;
 }
 
@@ -82,6 +93,8 @@ input[type="submit"]{
     padding: 12px 20px;
     border-radius: 6px;
     font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     
 }
 
